@@ -34,6 +34,7 @@
 
   programs.zsh = {
     enable = true;
+    initExtra = "export PROMPT='%2~ %% '";
   };
 
   programs.git = {
