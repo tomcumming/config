@@ -3,3 +3,4 @@
 
 .config/environment.d
 .config/gitui/theme.ron
+.config/ghc/ghci_history
