@@ -1,4 +1,5 @@
 default_layout "compact"
+pane_frames false
 
 keybinds {
 	locked { // Move about static layout while locked
