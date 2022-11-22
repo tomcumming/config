@@ -22,6 +22,7 @@
   home.packages = [
     pkgs.helix
     pkgs.gitui
+    pkgs.zellij
     pkgs.jq
     pkgs.wget
     pkgs.bzip2
