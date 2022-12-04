@@ -35,5 +35,8 @@
     pkgs.helix
     pkgs.gitui
     pkgs.delta
+
+    #Apps
+    pkgs.anki-bin
   ];
 }
