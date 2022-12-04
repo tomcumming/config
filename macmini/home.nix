@@ -7,6 +7,8 @@
   home.stateVersion = "22.11";
   programs.home-manager.enable = true;
 
+  programs.zsh.enable = true;
+
   programs.git = {
     enable = true;
     userName = "Tom Cumming";
@@ -16,6 +18,10 @@
   };
 
   xdg.configFile."helix/config.toml".source = ../helix/config.toml;
+  home.sessionVariables = {
+    # This sorts out terminal bugs when client is chrome os
+    LANG = "en_US.UTF-8";
+  };
 
   home.packages = [
     # System
