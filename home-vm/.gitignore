@@ -1,6 +1,0 @@
-# In home-manager
-.config/git/config
-
-.config/environment.d
-.config/gitui/theme.ron
-.config/ghc/ghci_history

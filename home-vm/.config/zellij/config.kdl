@@ -1,9 +1,0 @@
-default_layout "compact"
-pane_frames false
-
-keybinds {
-	locked { // Move about static layout while locked
-		bind "Ctrl t" { GoToNextTab; }
-		bind "Ctrl p" { FocusNextPane; }
-	}
-}
