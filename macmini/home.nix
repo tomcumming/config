@@ -18,6 +18,8 @@
   };
 
   xdg.configFile."helix/config.toml".source = ../helix/config.toml;
+  xdg.configFile."tmux/tmux.conf".source = ../tmux.conf;
+
   home.sessionVariables = {
     # This sorts out terminal bugs when client is chrome os
     LANG = "en_US.UTF-8";
@@ -32,6 +34,7 @@
 
     # Terminal Apps
     pkgs.ncdu
+    pkgs.tmux
     pkgs.helix
     pkgs.gitui
     pkgs.delta
