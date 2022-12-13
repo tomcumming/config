@@ -34,6 +34,7 @@
 
     # Terminal Apps
     pkgs.ncdu
+    pkgs.htop
     pkgs.tmux
     pkgs.helix
     pkgs.gitui
