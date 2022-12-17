@@ -7,7 +7,21 @@
   home.stateVersion = "22.11";
   programs.home-manager.enable = true;
 
-  programs.zsh.enable = true;
+  programs.zsh = {
+    enable = true;
+
+    initExtra = "
+if [ -z \"$IN_NIX_SHELL\" ]; then
+export PROMPT='%F{blue}%1~ %f$ '
+else 
+export PROMPT='%F{red}%1~ %f$ '
+fi
+";
+
+    shellAliases = {
+      nixdev = "nix develop -c zsh";
+    };
+  };
 
   programs.git = {
     enable = true;
