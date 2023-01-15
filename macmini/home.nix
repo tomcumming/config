@@ -47,7 +47,7 @@ fi
     pkgs.jq
 
     # Terminal Apps
-    pkgs.ncdu
+    # pkgs.ncdu # Broken :'(
     pkgs.htop
     pkgs.tmux
     pkgs.helix
