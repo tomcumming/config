@@ -21,6 +21,8 @@ fi
     shellAliases = {
       nixdev = "nix develop -c zsh";
     };
+    
+    enableVteIntegration = true;
   };
 
   programs.git = {
