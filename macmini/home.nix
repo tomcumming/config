@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, upkgs, ... }:
 
 {
   home.username = "tomm";
@@ -52,8 +52,8 @@ fi
     pkgs.ncdu
     pkgs.htop
     pkgs.tmux
-    pkgs.helix
-    pkgs.gitui
+    upkgs.helix
+    upkgs.gitui
     pkgs.delta
 
     #Apps
