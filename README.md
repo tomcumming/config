@@ -9,8 +9,6 @@ Symlink config:
 ln -s /path/to/here/.config ~/.config
 ```
 
-Add to registry, start dev shell for the first time to set settings:
-```bash
-nix registry add config /path/to/here
-nix develop 'config#macmini'
-```
+Run `./setup.sh` and source `~/.zshrc`
+
+`nix flake update` and `nix profile upgrade` to update packages

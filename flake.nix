@@ -9,39 +9,14 @@
       system = "aarch64-darwin";
       pkgs = nixpkgs.legacyPackages.${system};
       upkgs = unixpkgs.legacyPackages.${system};
-
-      zshrc = ''
-        if [ -z \"$IN_NIX_SHELL\" ]; then
-          # Not in dev shell
-        else
-          if [ -z \"$IN_OUTER_SHELL\" ]; then
-            export PROMPT=\'%F{red}%1~ %f$ \'
-          else
-            export PROMPT=\'%F{blue}%1~ %f$ \'
-          fi
-        fi
-
-        alias start-outer-shell="nix develop --offline \'config#macmini\' -c tmux"
-        alias nixdev="nix develop -u \'IN_OUTER_SHELL\' -c zsh"
-        
-        # Fix annoying osx keys
-        bindkey "^[[1;5C" forward-word
-        bindkey "^[[1;5D" backward-word
-      '';
     in
     {
       formatter.${system} = nixpkgs.legacyPackages.${system}.nixpkgs-fmt;
 
-      devShells.${system}.macmini = pkgs.mkShell {
-        name = "Macmini shell";
+      packages.${system}.default = pkgs.buildEnv {
+        name = "My global packages";
 
-        shellHook = ''
-          echo $'${zshrc}' > ~/.zshrc # Write the zsh config file
-          export LANG="en_US.UTF-8"
-          export IN_OUTER_SHELL=1
-        '';
-
-        packages = [
+        paths = [
           # System
           pkgs.git
           pkgs.wget
