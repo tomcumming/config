@@ -33,6 +33,7 @@
 
           #Apps
           pkgs.anki-bin
+          upkgs.alacritty
         ];
       };
     };
