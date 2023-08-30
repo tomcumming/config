@@ -31,6 +31,10 @@
           upkgs.gitui
           pkgs.delta
 
+          # Dictionary
+          pkgs.aspell
+          pkgs.aspellDicts.en
+
           #Apps
           pkgs.anki-bin
           upkgs.alacritty
