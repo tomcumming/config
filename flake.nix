@@ -37,7 +37,7 @@
 
           #Apps
           pkgs.anki-bin
-          upkgs.alacritty
+          pkgs.wezterm
         ];
       };
     };
