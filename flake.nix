@@ -27,9 +27,9 @@
           pkgs.ncdu
           pkgs.htop
           pkgs.tmux
-          upkgs.helix
+          pkgs.helix
           upkgs.gitui
-          pkgs.delta
+          upkgs.delta
 
           # Dictionary
           pkgs.aspell
