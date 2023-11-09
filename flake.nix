@@ -27,7 +27,7 @@
           pkgs.ncdu
           pkgs.htop
           pkgs.tmux
-          pkgs.helix
+          upkgs.helix # 23.10
           upkgs.gitui
           upkgs.delta
 
