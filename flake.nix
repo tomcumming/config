@@ -1,6 +1,6 @@
 {
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-23.05";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-23.11";
     unixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
   };
 
@@ -22,6 +22,7 @@
           pkgs.wget
           pkgs.curl
           pkgs.jq
+          pkgs.xz
 
           # Terminal Apps
           pkgs.ncdu
