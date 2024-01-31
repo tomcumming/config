@@ -1,6 +1,8 @@
+appFolder=~/Applications
+mkdir -p "$appFolder"
+
 for appName in $(ls ~/.nix-profile/Applications)
 do
-  appFolder=~/Applications
   app=~/.nix-profile/Applications/$appName
   rm "$appFolder/$appName"
   osascript \
