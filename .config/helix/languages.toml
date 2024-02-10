@@ -1,2 +1,7 @@
 [language-server]
 haskell-language-server = { command = "haskell-language-server-wrapper", args = ["--lsp"], config = { haskell = { plugin = { stan = { globalOn = false } } } } }
+
+[language-server.typescript-language-server]
+command = "npm" 
+args = ["exec", "typescript-language-server", "--", "--stdio"]
+config.hostInfo = "helix"
