@@ -5,3 +5,8 @@ haskell-language-server = { command = "haskell-language-server-wrapper", args = 
 command = "npm" 
 args = ["exec", "typescript-language-server", "--", "--stdio"]
 config.hostInfo = "helix"
+
+[language-server.purescript-language-server]
+command = "npm" 
+args = ["exec", "purescript-language-server", "--", "--stdio"]
+config.hostInfo = "helix"
