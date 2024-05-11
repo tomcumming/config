@@ -1,14 +1,14 @@
 {
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-23.11";
     unixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-23.11";
   };
 
-  outputs = { self, nixpkgs, unixpkgs }:
+  outputs = { self, unixpkgs, nixpkgs }:
     let
       system = "aarch64-darwin";
-      pkgs = nixpkgs.legacyPackages.${system};
       upkgs = unixpkgs.legacyPackages.${system};
+      pkgs = nixpkgs.legacyPackages.${system};
     in
     {
       formatter.${system} = nixpkgs.legacyPackages.${system}.nixpkgs-fmt;
@@ -25,7 +25,7 @@
           pkgs.xz
 
           # Terminal Apps
-          pkgs.ncdu
+          upkgs.ncdu # broken on stable
           pkgs.htop
           pkgs.tmux
           pkgs.helix
