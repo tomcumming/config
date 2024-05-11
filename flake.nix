@@ -28,7 +28,7 @@
           upkgs.ncdu # broken on stable
           pkgs.htop
           pkgs.tmux
-          pkgs.helix
+          upkgs.helix # I want 24
           pkgs.gitui
           pkgs.delta
 
