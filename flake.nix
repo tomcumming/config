@@ -1,7 +1,7 @@
 {
   inputs = {
     unixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-23.11";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-24.05";
   };
 
   outputs = { self, unixpkgs, nixpkgs }:
@@ -25,10 +25,10 @@
           pkgs.xz
 
           # Terminal Apps
-          upkgs.ncdu # broken on stable
+          pkgs.ncdu
           pkgs.htop
           pkgs.tmux
-          upkgs.helix # I want 24
+          pkgs.helix
           pkgs.gitui
           pkgs.delta
 
