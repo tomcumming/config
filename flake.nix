@@ -25,7 +25,7 @@
           pkgs.xz
 
           # Terminal Apps
-          pkgs.ncdu
+          upkgs.ncdu
           pkgs.htop
           pkgs.tmux
           pkgs.helix
