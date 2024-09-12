@@ -31,6 +31,7 @@
           pkgs.helix
           pkgs.gitui
           pkgs.delta
+          pkgs.hexyl
 
           # Dictionary
           pkgs.aspell
