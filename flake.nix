@@ -1,13 +1,12 @@
 {
   inputs = {
-    unixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-24.05";
+    # unixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-24.11";
   };
 
-  outputs = { self, unixpkgs, nixpkgs }:
+  outputs = { self, nixpkgs }:
     let
       system = "aarch64-darwin";
-      upkgs = unixpkgs.legacyPackages.${system};
       pkgs = nixpkgs.legacyPackages.${system};
     in
     {
@@ -25,7 +24,7 @@
           pkgs.xz
 
           # Terminal Apps
-          upkgs.ncdu
+          pkgs.ncdu
           pkgs.htop
           pkgs.tmux
           pkgs.helix
