@@ -14,3 +14,5 @@ alias nixdev="nix develop -c zsh"
 bindkey "^[[1;5C" forward-word # These are for ctrl+right-arrow etc
 bindkey "^[[1;5D" backward-word
 export LANG="en_US.UTF-8"
+
+export EDITOR=hx
