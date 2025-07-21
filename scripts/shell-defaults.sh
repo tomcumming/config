@@ -4,4 +4,4 @@ else
     export PS1='\[\e[91m\]\W \[\e[0m\]$ '
 fi
 
-alias nixdev="nix develop -c bash"
+alias nixdev="nix develop -c /usr/sbin/bash"
