@@ -1,12 +1,12 @@
 {
   inputs = {
     # unixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-24.11";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-25.05";
   };
 
   outputs = { self, nixpkgs }:
     let
-      system = "aarch64-darwin";
+      system = "x86_64-linux";
       pkgs = nixpkgs.legacyPackages.${system};
     in
     {
@@ -16,7 +16,8 @@
         name = "My global packages";
 
         paths = [
-          # System
+          # Commands
+          pkgs.wl-clipboard
           pkgs.git
           pkgs.wget
           pkgs.curl
@@ -35,10 +36,6 @@
           # Dictionary
           pkgs.aspell
           pkgs.aspellDicts.en
-
-          #Apps
-          pkgs.anki-bin
-          pkgs.wezterm
         ];
       };
     };
