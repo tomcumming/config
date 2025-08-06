@@ -1,7 +1,15 @@
-.config/htop
-.config/ghc
 .config/cabal/config
 .config/dconf
+.config/evolution/
+.config/ghc
+.config/gnome-initial-setup-done
+.config/.gsd-keyboard.settings-ported
+.config/gtk-3.0/
+.config/htop
+.config/ibus/
+.config/mimeapps.list
 .config/org.gnome.Ptyxis
 .config/pulse
 .config/toolbox
+.config/user-dirs.dirs
+.config/user-dirs.locale
