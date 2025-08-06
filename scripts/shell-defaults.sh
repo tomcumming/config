@@ -5,3 +5,5 @@ else
 fi
 
 alias nixdev="nix develop -c /usr/sbin/bash"
+
+export EDITOR=hx
